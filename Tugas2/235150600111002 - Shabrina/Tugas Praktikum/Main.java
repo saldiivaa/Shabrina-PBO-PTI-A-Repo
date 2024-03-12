@@ -29,10 +29,10 @@ public class Main {
                     perpus.tampilkanKategori(pilihanKategori);
                     break;
                 case 2:
-                    perpus.pinjamBuku();
+                    perpus.pinjamBukunya();
                     break;
                 case 3:
-                    perpus.kembaliBuku();
+                    perpus.kembalikanBukunya();
                     break;
                 case 0:
                     System.out.println("Terima kasih! Sampai jumpa " + nama + " :)");
