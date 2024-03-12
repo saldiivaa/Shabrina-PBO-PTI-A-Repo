@@ -1,0 +1,5 @@
+PenulisPolitik1,2024,Politik1
+PenulisPolitik2,2024,Politik2
+PenulisPolitik3,2024,Politik3
+PenulisPolitik4,2024,Politik4
+PenulisPolitik5,2024,Politik5

@@ -1,0 +1,5 @@
+PenulisPsikologi1,2024,Psikologi1
+PenulisPsikologi2,2024,Psikologi2
+PenulisPsikologi3,2024,Psikologi3
+PenulisPsikologi4,2024,Psikologi4
+PenulisPsikologi5,2024,Psikologi5

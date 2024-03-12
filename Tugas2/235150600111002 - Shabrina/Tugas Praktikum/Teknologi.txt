@@ -1,0 +1,6 @@
+PenulisTeknologi1,2024,Teknologi1
+PenulisTeknologi2,2024,Teknologi2
+PenulisTeknologi3,2024,Teknologi3
+PenulisTeknologi4,2024,Teknologi4
+PenulisTeknologi5,2024,Teknologi5
+
