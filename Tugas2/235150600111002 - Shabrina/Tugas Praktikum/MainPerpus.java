@@ -1,32 +1,32 @@
 import java.util.Scanner;
 
-public class Main {
+public class MainPerpus {
     public static void main(String[] args) {      
-        Perpustakaan perpus = new Perpustakaan(); 
+        Perpustakaan perpus = new Perpustakaan(""); 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukkan nama: ");
+        System.out.print("Masukkan nama\t: ");
         String nama = input.nextLine();
-        System.out.print("Masukkan kelas: ");
+        System.out.print("Masukkan kelas\t: ");
         String kelas = input.nextLine();
-        System.out.print("Masukkan NIM: ");
+        System.out.print("Masukkan NIM\t: ");
         int nim = input.nextInt();
-        System.out.println("Selamat datang, " + nama + " di Perpustakaan Sumber Waras");
+        System.out.println("Selamat datang, " + nama + " di Perpustakaan Newbie");
 
         int pilihanMenu;
         do {
             tampilkanMenu();
-            System.out.print("Silahkan pilih menu (0 untuk keluar): ");
+            System.out.print("Pilih menu : ");
             pilihanMenu = input.nextInt();
             input.nextLine();
 
             switch (pilihanMenu) {
                 case 1:
                 System.out.println("Pilih : \n1. Teknologi\n2. Filsafat\n3. Sejarah\n4. Agama\n5. Psikologi\n6. Politik\n7. Fiksi");
-                    System.out.print("Silahkan pilih kategori buku: ");
-                    int pilihanKategori = input.nextInt();
+                    System.out.print("Silahkan pilih kategori buku : ");
+                    int i = input.nextInt();
                     input.nextLine();
-                    perpus.tampilkanKategori(pilihanKategori);
+                    perpus.tampilkanKategori(i);
                     break;
                 case 2:
                     perpus.pinjamBukunya();
@@ -35,10 +35,10 @@ public class Main {
                     perpus.kembalikanBukunya();
                     break;
                 case 0:
-                    System.out.println("Terima kasih! Sampai jumpa " + nama + " :)");
+                    System.out.println("Terima kasih!");
                     break;
                 default:
-                    System.out.println("Pilihan tidak valid. Silahkan coba lagi.");
+                    System.out.println("Pilihan tidak valid.");
                     break;
             }
         } while (pilihanMenu != 0);
@@ -46,9 +46,9 @@ public class Main {
 
     private static void tampilkanMenu() {
         System.out.println("\nMenu: ");
-        System.out.println("1. Tampilkan Buku Sesuai Kategori");
-        System.out.println("2. Pinjam Buku");
-        System.out.println("3. Kembalikan Buku");
-        System.out.println("0. Keluar");
+        System.out.println("(1) Tampilkan Buku Sesuai Kategori");
+        System.out.println("(2) Pinjam Buku");
+        System.out.println("(3) Kembalikan Buku");
+        System.out.println("(0) Keluar");
     }
 }

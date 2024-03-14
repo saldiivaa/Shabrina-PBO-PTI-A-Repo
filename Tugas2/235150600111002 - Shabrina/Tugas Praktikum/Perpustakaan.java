@@ -60,7 +60,7 @@ public class Perpustakaan {
 
             scanner.close();
         } catch (FileNotFoundException e) {
-            System.out.println("File tersebut tidak ditemukan: " +e.getMessage());
+            System.out.println("File tidak ditemukan: " +e.getMessage());
         }
     }
 
@@ -68,7 +68,7 @@ public class Perpustakaan {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan judul buku yang ingin dipinjam: ");
         String judul = input.nextLine();
-        System.out.println("Buku "+judul+" berhasil dipinjam.");
+        System.out.println("Buku " + judul + " berhasil dipinjam.");
 
     }
 
@@ -76,7 +76,7 @@ public class Perpustakaan {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan judul buku yang ingin dikembalikan: ");
         String judul = input.nextLine();
-        System.out.println("Buku " +judul+" berhasil dikembalikan.");
+        System.out.println("Buku " + judul + " berhasil dikembalikan.");
         
     }
 

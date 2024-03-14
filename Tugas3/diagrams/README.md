@@ -1,16 +1,16 @@
 # 📁 Tugas 3 : Class Diagram
 
 ## 👤 Identitas Intern
-Nama : Devan             
-NIM  : 22xxxxxx
+Nama : Shabrina Salsabila Diva             
+NIM  : 235150600111002
 
 ## 📤 Submission
 
-Tema yang dipilih : 
+Tema yang dipilih : Pendidikan
 Class Diagram yang dibuat : 
-1. Class Diagram 1
-2. Class Diagram 2
-dst
+1. Dosen
+2. Mahasiswa
+3. OnlineLearning
 
 ## 🔗 Link Penjelasan Tugas
 
