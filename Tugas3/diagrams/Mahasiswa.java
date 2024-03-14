@@ -24,18 +24,18 @@ public class Mahasiswa {
     }
     
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("========== SURVEI KEGIATAN MAHASISWA ==========");
         System.out.print("Masukkan nama\t\t: ");
-        String nama = input.nextLine();
+        String nama = scanner.nextLine();
         System.out.print("Masukkan NIM\t\t: ");
-        String NIM = input.nextLine();
+        String NIM = scanner.nextLine();
         System.out.print("Masukkan program studi\t: ");
-        String programStudi = input.nextLine();
+        String programStudi = scanner.nextLine();
         
         Mahasiswa mahasiswa = new Mahasiswa(nama, NIM, programStudi);
         
-        System.out.println("\nSelamat datang, " + mahasiswa.nama + "! KamU dari prodi " + mahasiswa.programStudi + " kan??\nYuk, jawab pertanyaan singkat di bawah ini!");
+        System.out.println("\nSelamat datang, " + mahasiswa.nama + "! Kamu dari prodi " + mahasiswa.programStudi + " kan??\nYuk, jawab pertanyaan singkat di bawah ini!");
         boolean lanjutkanProgramIni = true;
         
         while (lanjutkanProgramIni) {
@@ -46,23 +46,23 @@ public class Mahasiswa {
             System.out.println("(4) Lihat informasi mahasiswa");
             System.out.println("(5) Keluar");
             System.out.print("Pilihanmu : ");
-            int opsi = input.nextInt();
-            input.nextLine(); 
+            int opsi = scanner.nextInt();
+            scanner.nextLine(); 
             
             switch (opsi) {
                 case 1:
                     System.out.print("\nMasukkan materi yang ingin dipelajari: ");
-                    String materiBelajar = input.nextLine();
+                    String materiBelajar = scanner.nextLine();
                     mahasiswa.belajar(materiBelajar);
                     break;
                 case 2:
                     System.out.print("\nMasukkan jenis pekerjaan magang\t: ");
-                    String jenisPekerjaan = input.nextLine();
+                    String jenisPekerjaan = scanner.nextLine();
                     mahasiswa.magang(jenisPekerjaan);
                     break;
                 case 3:
                     System.out.print("\nMasukkan materi praktikum\t: ");
-                    String materiPraktikum = input.nextLine();
+                    String materiPraktikum = scanner.nextLine();
                     mahasiswa.praktikum(materiPraktikum);
                     break;
                 case 4:
@@ -79,6 +79,6 @@ public class Mahasiswa {
             }
         }
         
-        input.close();
+        scanner.close();
     }
 }

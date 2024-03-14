@@ -29,7 +29,6 @@ class OnlineLearning {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("==================== ONLINE LEARNING ====================\n");
         System.out.println("Selamat datang di Online Learning Newbie!\n");
         System.out.print("Masukkan nama pengguna\t\t\t : ");
