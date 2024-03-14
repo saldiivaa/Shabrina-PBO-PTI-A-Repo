@@ -3,29 +3,26 @@ import java.util.Scanner;
 public class MainPerpus {
     public static void main(String[] args) {      
         Perpustakaan perpus = new Perpustakaan(""); 
-        Scanner input = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Masukkan nama\t: ");
-        String nama = input.nextLine();
-        System.out.print("Masukkan kelas\t: ");
-        String kelas = input.nextLine();
+        String nama = scanner.nextLine();
         System.out.print("Masukkan NIM\t: ");
-        int nim = input.nextInt();
+        int nim = scanner.nextInt();
         System.out.println("Selamat datang, " + nama + " di Perpustakaan Newbie");
 
-        int pilihanMenu;
+        int opsi;
         do {
-            tampilkanMenu();
+            tampilkanOpsi();
             System.out.print("Pilih menu : ");
-            pilihanMenu = input.nextInt();
-            input.nextLine();
+            opsi = scanner.nextInt();
+            scanner.nextLine();
 
-            switch (pilihanMenu) {
+            switch (opsi) {
                 case 1:
                 System.out.println("Pilih : \n1. Teknologi\n2. Filsafat\n3. Sejarah\n4. Agama\n5. Psikologi\n6. Politik\n7. Fiksi");
                     System.out.print("Silahkan pilih kategori buku : ");
-                    int i = input.nextInt();
-                    input.nextLine();
+                    int i = scanner.nextInt();
+                    scanner.nextLine();
                     perpus.tampilkanKategori(i);
                     break;
                 case 2:
@@ -41,10 +38,10 @@ public class MainPerpus {
                     System.out.println("Pilihan tidak valid.");
                     break;
             }
-        } while (pilihanMenu != 0);
+        } while (opsi != 0);
     }
 
-    private static void tampilkanMenu() {
+    private static void tampilkanOpsi() {
         System.out.println("\nMenu: ");
         System.out.println("(1) Tampilkan Buku Sesuai Kategori");
         System.out.println("(2) Pinjam Buku");

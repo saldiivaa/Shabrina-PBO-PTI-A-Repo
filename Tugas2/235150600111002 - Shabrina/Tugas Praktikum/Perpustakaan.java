@@ -65,18 +65,18 @@ public class Perpustakaan {
     }
 
     public void pinjamBukunya() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Masukkan judul buku yang ingin dipinjam: ");
-        String judul = input.nextLine();
-        System.out.println("Buku " + judul + " berhasil dipinjam.");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan judul buku yang akan dipinjam: ");
+        String judulBuku = scanner.nextLine();
+        System.out.println("Buku " + judulBuku + " berhasil anda dipinjam.");
 
     }
 
     public void kembalikanBukunya() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Masukkan judul buku yang ingin dikembalikan: ");
-        String judul = input.nextLine();
-        System.out.println("Buku " + judul + " berhasil dikembalikan.");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan judul buku yang akan dikembalikan: ");
+        String judulBuku = scanner.nextLine();
+        System.out.println("Buku " + judulBuku + " berhasil anda dikembalikan.");
         
     }
 
