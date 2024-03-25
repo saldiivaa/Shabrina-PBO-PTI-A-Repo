@@ -1,0 +1,15 @@
+Modul A
+1. -Mengubah akses private menjadi public agar bisa name dan mark bisa diakses secara bebas.
+-Menginput nilai s1.setMark dengan tipe integer tanpa menggunakan “..” karena tanda ini digunakan untuk menginput nilai bertipe String.
+-Ketika di dalam system out atau ketika mencetak nilai, method yang dipanggil adalah getName() dan getMark() karena setName() dan setMark() digunakan untuk menginput nilai, tidak perlu dipanggil kembali. Kita bisa mencetak nilai setName() dan setmark() dengan memanggil method getName() dan getMark().
+-Saat mencetak name dan mark kita harus menggunakan s1.name dan s1.mark karena kedua variable ini tidak dapat dipanggil langsung atau diakses langsung di main Test.
+3. Karena diubah menjadi private, method setName tidak dapat dipanggil ke dalam class Test karena tidak memiliki akses. Method setName haya bisa dipanggil di dalam class Student, dimana method tersebut dideklarasikan. Di dalam method setName() kita bisa menginput nilai dari name. Tetapi jika diubah menjadi private, otomatis variable name tidak bisa diberi input atau diatur oleh pengguna.
+4. Konsep enkapusulasi tetap berjalan atau berfungsi. Karena variable name dan mark bersifat private yang berarti name dan mark hanya bisa diakses atau dipanggil di dalam class Student, dimana mereka dideklarasikan. 
+
+Modul B
+1. Method getMaxLoad karena mengambil nilai dari variable bernama maxLoad dan Method getLoad karena mengambil nilai dari variable bernama Load. Serta kedua method ini memiliki return yang berarti mengembalikan nilai tersebut.
+2. Terjadi kesalahan. Karena tipe data dari variable load adalah private yang berarti tidak dapat dipanggil di class lain dan hanya dapat dipanggil di class vehicle1 dimana variable tersebut dideklarasikan.
+3. a. Program tidak terjadi kesalahan karena tipe load sudah diubah menjadi public yang menandakan bahwa variable load bisa dipanggil di class lain, tidak hanya di calss vehicle1 dimana dia dideklarasikan. 
+b. Program tidak terjadi kesalahan karena tipe load sudah diubah menjadi public yang menandakan bahwa variable load bisa dipanggil di class lain, tidak hanya di calss vehicle1 dimana dia dideklarasikan. 
+4. Program berjalan dan tidak terjadi kesalahan. Protected disini merupakan konsep enkapsulasi. Namun berbeda dengan private, protected bisa diakses di luar kelas method tersebut dideklarasikan, berbeda dengan private. Class TestVehicle1 dapat mengakses nilai tersebut melalui metode getter di class vehicle1. Protected ini juga memungkinkan subclass di dalam class deklarasi bisa memanggil variable atau atribut tersebut secara bebas.
+5. Terjadi kesalahan atau error. Default tidak memungkinkan akses ke class maupun subclass lain karena tingkat enkapsulasinya lebih ketat dan tinggi. Hanya class atau package yang sama, yang dapat mengakses atribut atau variable bertipe default

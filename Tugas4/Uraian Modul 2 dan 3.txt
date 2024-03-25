@@ -1,0 +1,27 @@
+Soal yang butuh dijelaskan
+
+Modul 2 A
+1. Perubahan pada kode berikut agar tidak error 
+public student(){ 
+name = ""; 
+address = ""; 
+age = 0; 
+} 
+
+Harusnya
+public Student(){ 
+name = ""; 
+address = ""; 
+age = 0; 
+} 
+
+Nomor lainnya ada di kode program dan penjelasan video
+
+Modul 3 A
+2. Error atau terjadi kesalahan karena jika pada parameter double value dan double value2 di hapus dan di ganti menjadi int a dan int b, maka value dan value2 tidak terdeteksi nilainya karena parameter yang dipanggil dalam method HitungLuas adalah int a dan int b. 
+Serta kita tidak bisa mendeklarasikan method dengan nama yang sama dengan parameter yang sama pula. Jika nama method sama maka parameternya harus berbeda. Error ini juga bsa disebabkan karena kita telah mendeklarasikan method HitungLuas sebanyak dua kali, dan kemudian keduanya diberi parameter yang sama yaitu int a, int b.
+
+3. Jika diubah ke void, maka tidak mengembalikan nilai apapun. Tetapi, di dalam method terdapat return yang mengembalikan nilai. Jika bertipe data void namun kita memanggil return, maka kode program akan error.
+
+Modul 3 B
+3. Dengan menambahkan konstruktor bertipe data String dan menambahkan konstruktor untuk parsing, maka nilai yang diinput adalah bertipe data int. Karena nilai String di sini sudah diubah menjadi nilai integer.
