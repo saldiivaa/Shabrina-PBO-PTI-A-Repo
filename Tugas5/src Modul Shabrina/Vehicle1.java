@@ -1,5 +1,3 @@
-package Tugas5.src;
-
 public class Vehicle1 { 
     public double load;
     public double maxLoad; 
