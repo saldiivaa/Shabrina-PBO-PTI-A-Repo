@@ -16,7 +16,7 @@ public class KueJadi extends Kue {
 
     @Override
     public double hitungHarga() {
-        return harga * jumlah * 2;
+        return super.getHarga() * jumlah * 2;
     }
 
     @Override

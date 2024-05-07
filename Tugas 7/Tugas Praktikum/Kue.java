@@ -1,6 +1,6 @@
 public abstract class Kue {
-    protected String nama;
-    protected double harga;
+    private String nama;
+    private double harga;
 
     public Kue(String nama, double harga) {
         this.nama = nama;
