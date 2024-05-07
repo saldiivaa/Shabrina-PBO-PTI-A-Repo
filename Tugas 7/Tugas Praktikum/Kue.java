@@ -29,6 +29,6 @@ public abstract class Kue {
     // Menyediakan representasi string dasar untuk semua jenis kue
     @Override
     public String toString() {
-        return String.format("Nama\t : %s\nHarga\t : Rp %,.2f", nama, hitungHarga());
+        return String.format("Nama\t : %s\nHarga\t : Rp %,.2f", getNama(), hitungHarga());
     } //representasi String dari objek Kue
 }
