@@ -15,7 +15,16 @@ public class Main {
 
         for (Pegawai pegawai : daftarPegawai) {
             System.out.println(pegawai.getClass().getSimpleName() + "\n" + pegawai + "\n");
+        
+        if (pegawai instanceof Sales) {
+            Sales sales = (Sales) pegawai;
+            System.out.println("\nOUTPUT DOWNCASTING");
+            System.out.println("Nama Sales\t: " + sales.getNama());
+            System.out.println("Total Penjualan : " + sales.getPenjualan());
+            System.out.println("Besaran Komisi  : " + String.format("Rp %.2f", sales.getKomisi()) + "\n");
+            }
         }
+
 
     }
 }
