@@ -2,7 +2,6 @@ class Sales extends Pegawai {
     private int penjualan;
     private double komisi;
 
-    // Konstruktor
     public Sales(String nama, String noKTP, int penjualan, double komisi) {
         super(nama, noKTP);
         this.penjualan = penjualan;
@@ -24,9 +23,6 @@ class Sales extends Pegawai {
         this.komisi = komisi;
     }
 
-    
-
-    // Implementasi metode hitungGaji untuk Sales
     @Override
     public double gaji() {
         return penjualan * komisi;
@@ -34,6 +30,6 @@ class Sales extends Pegawai {
 
     @Override
     public String toString() {
-        return super.toString() + "\nTotal Penjualan : " + penjualan + "\nBesaran Komisi  : " + String.format("Rp %.2f", komisi) + "\nPendapatan\t: " + String.format("Rp %.2f", gaji());
+        return "\t    SALES\n" +super.toString() + "\nTotal Penjualan : " + penjualan + "\nBesaran Komisi  : " + String.format("Rp %.2f", komisi) + "\nPendapatan\t: " + String.format("Rp %.2f", gaji());
     }
 }

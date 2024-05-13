@@ -26,8 +26,6 @@ class PegawaiHarian extends Pegawai {
         this.totalJam = totalJam;
     }
 
-
-    // Implementasi metode hitungGaji untuk PegawaiHarian
     @Override
     public double gaji() {
         if (totalJam <= 40) {
@@ -41,6 +39,6 @@ class PegawaiHarian extends Pegawai {
 
     @Override
     public String toString() {
-        return super.toString() + "\nUpah/jam\t: " + String.format("Rp %.2f", upahPerJam) + "\nTotal jam kerja : " + totalJam + " jam" + "\nPendapatan\t: " + String.format("Rp %.2f", gaji());
+        return "\tPEGAWAI HARIAN\n" + super.toString() + "\nUpah/jam\t: " + String.format("Rp %.2f", upahPerJam) + "\nTotal jam kerja : " + totalJam + " jam" + "\nPendapatan\t: " + String.format("Rp %.2f", gaji());
     }
 }
